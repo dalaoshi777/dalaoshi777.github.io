@@ -38,17 +38,15 @@ Go支持跨平台编译
 
 例如：在windows平台编译一个能在linux平台执行的可执行文件
 
-```bash
+`bash
 SET CGO_ENABLED=0  // 禁用CGO
 SET GOOS=linux  // 目标平台是linux
-SET GOARCH=amd64  // 目标处理器架构是amd64
-```
+SET GOARCH=amd64  // 目标处理器架构是amd64`
 
 执行`go build`
 
 Mac平台交叉编译：
 
-```bash
-CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build
-CGO_ENABLED=0 GOOS=windows GOARCH=amd64 go build
-```
+    bash
+    1. CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build
+    2. CGO_ENABLED=0 GOOS=windows GOARCH=amd64 go build

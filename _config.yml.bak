@@ -93,13 +93,18 @@ live2d:
   debug: false
   model:
     use: live2dw
+    scale: 1.7
   display:
-    right: -50
-    width: 400
-    height: 800
-    bottom: -160
+    surperSample: 2
+    width: 200
+    height: 360
+    position: right
+    hOffest: 0
+    vOffest: -20
   mobile:
     show: true
+    scale: 1.5
   react:
-    opacity: 1
+    opacityDefault: 0.7
+    opacityOnHover: 0.2
     
