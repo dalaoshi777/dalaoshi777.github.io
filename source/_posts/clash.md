@@ -9,7 +9,7 @@ cover: https:/dalaoshi777.github.io/2020/02/16/clash/11.jpg
 coverWidth: 600
 coverHeight: 600
 ---
-# 三玖云官方推荐clashr安卓版使用教程
+三玖云clash安卓端快速上手
 <!--more-->
 ## 下载clashr  [下载地址](https://dl.sjc.pw/)
 ![](https://i.loli.net/2020/02/24/TeZJEMn3DwuO71S.jpg)

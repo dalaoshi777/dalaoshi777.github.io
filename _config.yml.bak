@@ -39,7 +39,7 @@ post_asset_folder: true
 relative_link: false
 future: true
 highlight:
-  enable: true
+  enable: false
   line_number: true
   auto_detect: true
   tab_replace:
@@ -107,4 +107,8 @@ live2d:
   react:
     opacityDefault: 0.7
     opacityOnHover: 0.2
+    
+#音乐
+aplayer:
+  meting: true
     
