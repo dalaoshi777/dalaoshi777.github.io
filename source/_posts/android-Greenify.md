@@ -6,7 +6,7 @@ categories:
 tags:
 - 类原生
 - 教程
-cover: https:/dalaoshi777.github.io/2020/03/25/android-Greenify/05.jpg
+cover: /2020/03/25/android-Greenify/05.jpg
 coverWidth: 1500
 coverHeight: 1413
 ---

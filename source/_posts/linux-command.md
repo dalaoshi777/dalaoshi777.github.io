@@ -6,7 +6,7 @@ categories:
 tags:
 - Linux
 - Linux基础命令
-cover: https:/dalaoshi777.github.io/2020/03/27/linux-command/01.jpg
+cover: /2020/03/27/linux-command/01.jpg
 coverWidth: 928
 coverHeight: 2158
 ---

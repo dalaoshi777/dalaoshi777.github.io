@@ -79,7 +79,7 @@ theme: nexmoe
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repository: git@github.com:dalaoshi777/dalaoshi777.github.io.git
+  repository: git@github.com:dalaoshi777/dalaoshi777Blog
   branch: master
 
 # 模型

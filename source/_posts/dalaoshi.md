@@ -6,7 +6,7 @@ categories:
 tags:
 - 大老师
 - 语录
-cover: https:/dalaoshi777.github.io/2020/02/29/dalaoshi/14.png
+cover: /2020/02/29/dalaoshi/14.png
 coverWidth: 1920
 coverHeight: 1080
 ---
