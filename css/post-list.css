@@ -72,5 +72,5 @@
   color: #335eea;
 }
 .page-excerpt {
-  height: 80px;
+  min-height: 80px;
 }

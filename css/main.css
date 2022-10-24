@@ -84,7 +84,7 @@ body {
   color: #335eea;
 }
 .page-excerpt {
-  height: 80px;
+  min-height: 80px;
 }
 .header-box {
   display: flex;
