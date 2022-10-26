@@ -16,9 +16,22 @@
   justify-content: center;
   font-size: 40px;
   font-weight: bold;
+  color: #a7535a;
 }
 .post-content a {
   text-decoration: none;
+}
+.post-img-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.post-img {
+  max-width: 50%;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 1px #ed5a65 solid;
 }
 .post-content h1,
 h2,
@@ -49,7 +62,7 @@ code {
   line-height: 20px;
   display: inline-block;
 }
-.post img {
+.post-content img {
   width: 80%;
   border-radius: 8px;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);

@@ -3,9 +3,11 @@
   justify-content: center;
 }
 .friends {
-  min-width: 800px;
+  min-width: 80%;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 .friends-item img {
   width: 150px;
@@ -31,4 +33,5 @@
   margin-top: 10px;
   color: #000;
   text-decoration: none;
+  -webkit-tap-highlight-color: rgba(255,255,255,0);
 }
