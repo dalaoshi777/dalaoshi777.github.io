@@ -1,13 +1,14 @@
 .archive-box {
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 .tag-cloud-box {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   border-radius: 12px;
-  padding: 10px;
   margin: 10px;
-  width: 800px;
+  width: 75%;
   display: flex;
   flex-direction: column;
 }
@@ -31,7 +32,7 @@
   font-weight: 700;
   color: #000;
   font-size: 18px;
-  margin: 12px 0 0 12px;
+  margin: 0px 10px 10px 10px;
   padding: 5px 10px;
   transition: 0.2s;
   border-radius: 6px;
@@ -42,4 +43,38 @@
 }
 .tags-box a:hover {
   color: #335eea;
+}
+.archive {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  border-radius: 12px;
+  margin: 10px;
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+}
+.archive-list {
+  list-style: none;
+}
+.archive-list-item {
+  margin: 10px;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 6px;
+}
+.archive-list-item:hover {
+  background-color: #f6f8fa;
+}
+.archive-list-link {
+  text-decoration: none;
+  color: #000;
+  display: block;
+}
+@media screen and (max-width: 450px) {
+  .archive {
+    width: 90%;
+  }
+  .tag-cloud-box {
+    width: 90%;
+  }
 }
