@@ -18,9 +18,6 @@
   font-weight: bold;
   color: #a7535a;
 }
-.post-content a {
-  text-decoration: none;
-}
 .post-img-box {
   display: flex;
   justify-content: center;
@@ -33,14 +30,8 @@
   border-radius: 8px;
   border: 1px #ed5a65 solid;
 }
-.post-content h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  margin-bottom: 10px;
+.post-content >* {
+  margin: 1em 0;
 }
 .post-content a {
   color: #4d1018;
@@ -49,7 +40,6 @@ p {
 .page-excerpt a {
   color: #4d1018;
   font-weight: bold;
-  text-decoration: none;
 }
 .page-excerpt p {
   margin-top: 10px;

@@ -6,6 +6,9 @@
 ::-webkit-scrollbar {
   display: none;
 }
+p {
+  font-size: 15px;
+}
 body {
   background-image: url("");
   background-size: 100%;
@@ -22,20 +25,20 @@ body {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   min-height: 80px;
   width: 75%;
-  border-radius: 12px;
+  border-radius: 6px;
   margin: 10px;
   background-color: #fff;
   transition: transform 0.5s;
 }
 .post-list-img-box {
-  width: 250px;
+  width: 180px;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-right: 10px;
 }
 .post-list-img {
-  max-width: 100%;
+  overflow: hidden;
   border-radius: 12px;
   object-fit: cover;
 }
@@ -43,7 +46,6 @@ body {
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 100%;
 }
 .post-list-box:hover {
   transform: translateY(-3px);
@@ -112,7 +114,6 @@ body {
 }
 .page-excerpt {
   height: 100%;
-  min-height: 80px;
   margin: 0 10px;
 }
 @media screen and (max-width: 450px) {
@@ -139,6 +140,7 @@ body {
   font-weight: bold;
 }
 .avatar {
+  margin-top: 1em;
   width: 150px;
   border-radius: 18px;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -194,9 +196,6 @@ body {
   font-weight: bold;
   color: #a7535a;
 }
-.post-content a {
-  text-decoration: none;
-}
 .post-img-box {
   display: flex;
   justify-content: center;
@@ -209,14 +208,8 @@ body {
   border-radius: 8px;
   border: 1px #ed5a65 solid;
 }
-.post-content h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  margin-bottom: 10px;
+.post-content >* {
+  margin: 1em 0;
 }
 .post-content a {
   color: #4d1018;
@@ -225,7 +218,6 @@ p {
 .page-excerpt a {
   color: #4d1018;
   font-weight: bold;
-  text-decoration: none;
 }
 .page-excerpt p {
   margin-top: 10px;
@@ -275,7 +267,7 @@ table th {
 }
 .tag-cloud-box {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  border-radius: 12px;
+  border-radius: 6px;
   margin: 10px;
   width: 75%;
   display: flex;
@@ -315,7 +307,7 @@ table th {
 }
 .archive {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  border-radius: 12px;
+  border-radius: 6px;
   margin: 10px;
   width: 75%;
   display: flex;
@@ -383,4 +375,37 @@ table th {
   color: #000;
   text-decoration: none;
   -webkit-tap-highlight-color: rgba(255,255,255,0);
+}
+.paginator {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 18px;
+  text-transform: uppercase;
+  margin: 50px auto 5vh;
+}
+.page-number.current {
+  color: #fff;
+  background: #0e90d2;
+  border-color: #0e90d2;
+  box-shadow: 2px 2px 4px #0e90d2;
+}
+.paginator >* {
+  min-width: 35px;
+  height: 35px;
+  line-height: 33px;
+  padding: 0 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin: 0 5px;
+  display: inline-block;
+  vertical-align: middle;
+  box-sizing: border-box;
+}
+.paginator >*.extend {
+  font-size: 12px;
+}
+.paginator a {
+  text-decoration: none;
+  color: #000;
 }
