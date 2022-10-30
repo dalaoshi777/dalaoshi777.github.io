@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/highlight/styles/github.min.css">
+
+
+  <meta name="generator" content="Hexo 6.3.0"></head>
+  <body>
+    <div class="header">
+  <div class="header-box">
+    <img class="avatar" src="/img/3.png" alt="">
+    <p class="name">小三玖のblog</p>
+    <p>知晓天空之蓝的人啊</p>
+    <ul id="menu">
+      <!-- 内部链接本页面直接跳转 -->
+      
+        <li class="menu-item">
+          <a href="/" class="menu-item-link">首页</a>
+        </li>
+      
+        <li class="menu-item">
+          <a href="/archives" class="menu-item-link">归档</a>
+        </li>
+      
+        <li class="menu-item">
+          <a href="/friend" class="menu-item-link">朋友</a>
+        </li>
+      
+        <li class="menu-item">
+          <a href="/about" class="menu-item-link">关于</a>
+        </li>
+      
+    </ul>
+  </div>
+</div>
+
+
+    <div class="post">
+  <div class="post-box">
+    <div class="post-img-box">
+      <img class="post-img" src="/" alt="">
+    </div>
+    <div class="page-title">
+      导航栏高亮实例
+    </div>
+    <div class="post-content">
+      <h2 id="html代码"><a href="#html代码" class="headerlink" title="html代码"></a>html代码</h2><pre><code class="html">&lt;div id=&quot;navi&quot;&gt;
+&lt;ul&gt;
+    &lt;li&gt;&lt;a href=&quot;&quot;&gt;主页1&lt;/a&gt;&lt;li&gt;
+    &lt;li&gt;&lt;a href=&quot;&quot;&gt;主页2&lt;/a&gt;&lt;li&gt;
+    &lt;li&gt;&lt;a href=&quot;&quot;&gt;主页3&lt;/a&gt;&lt;li&gt;
+    &lt;li&gt;&lt;a href=&quot;&quot;&gt;主页4&lt;/a&gt;&lt;li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+</code></pre>
+<h2 id="css代码部分"><a href="#css代码部分" class="headerlink" title="css代码部分"></a>css代码部分</h2><p>给li添加类名hl</p>
+<pre><code class="css">#nav ul li.hl a &#123; 
+    color: red;
+&#125;
+</code></pre>
+<p>js代码部分</p>
+<pre><code class="javascript">var nav = document.getElementById(&quot;navi&quot;);
+var links = nav.getElementsByTagName(&quot;li&quot;);
+var lilen = nav.getElementsByTagName(&quot;a&quot;);
+var currenturl = document.location.href;
+var last = 0;
+for (var i=0;i&lt;links.length;i++)
+&#123;
+   var linkurl =  lilen.getAttribute(&quot;href&quot;);
+     if(currenturl.indexOf(linkurl)!=-1)
+        &#123;
+         last = i;
+        &#125;
+&#125;
+links[last].className = &quot;current&quot;;
+</code></pre>
+
+    </div>
+  </div>
+</div>
+    
+<script src="/lib/highlight/highlight.min.js"></script>
+
+    
+<script src="/js/main.js"></script>
+
+    
+<script src="/js/click-love.js"></script>
+
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html
