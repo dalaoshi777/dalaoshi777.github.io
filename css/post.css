@@ -8,7 +8,7 @@
   border-radius: 12px;
   padding: 10px;
   margin: 10px;
-  width: 800px;
+  width: 75%;
   background-color: #fff;
 }
 .page-title {
@@ -29,6 +29,11 @@
   object-fit: cover;
   border-radius: 8px;
   border: 1px #ed5a65 solid;
+}
+@media screen and (max-width: 450px) {
+  .post-box {
+    width: 90%;
+  }
 }
 .post-content >* {
   margin: 1em 0;
