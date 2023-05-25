@@ -47,22 +47,27 @@
 
 
     <div class="post">
-    <div class="post-box">
-      <div class="post-img-box">
-        <img class="post-img" src="/" alt="">
-      </div>
-      <div class="page-title">
-        About
-      </div>
-      <div class="post-content">
-        <link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h3 id="介绍-20岁是个学生"><a href="#介绍-20岁是个学生" class="headerlink" title="介绍:20岁是个学生"></a>介绍:20岁是个学生</h3><h3 id="音乐"><a href="#音乐" class="headerlink" title="音乐"></a>音乐</h3>
-    <div id="aplayer-gVrPQvCA" class="aplayer aplayer-tag-marker meting-tag-marker"
-         data-id="7733568506" data-server="netease" data-type="playlist" data-mode="circulation" data-autoplay="true" data-mutex="false" data-listmaxheight="340px" data-preload="none" data-theme="#ad7a86"
-    ></div>
+  <div class="post-box">
+    <div class="post-img-box">
+      <img class="post-img" src="/" alt="">
+    </div>
+    <div class="page-title">
+      es-JS垃圾回收机制
+    </div>
+    <div class="post-content">
+      <link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p><strong>1、什么是js的回收机制</strong></p>
+<ul>
+<li>垃圾回收机制的原理是找到不再继续使用的变量，释放其内存。垃圾回收器会按照固定的时间间隔(或代码中预定的收集时间)，周期性地执行这一操作;</li>
+<li>Javascript 会找出不再使用的变量，不再使用意味着这个变量生命周期的结束。Javascript 中存在两种变量——全局变量和局部变量，全部变量的声明周期会一直持续，直到页面卸载;</li>
+<li>而局部变量声明在函数中，它的声明周期从执行函数开始，直到函数执行结束。在这个过程中，局部变量会在堆或栈上被分配相应的空间以存储它们的值，函数执行结束，这些局部变量也不再被使用，它们所占用的空间也就被释放;</li>
+<li>垃圾回收的两种实现方式：标记清除、引用计数</li>
+</ul>
+<h3 id="重点"><a href="#重点" class="headerlink" title="重点"></a>重点</h3><p>**全局变量一般不会被回收</p>
+<p>**我们在开发中要注意内存泄露问题，不然会出现意想不到的情况;</p>
 
-      </div>
     </div>
   </div>
+</div>
     <div class="NecoCard-copyright">
     © 2022 dalaoshi777 Powered by
     <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a> & <a target="_blank" rel="noopener" href="https://github.com/dalaoshi777/NecoCard-hexo-theme">NecoCard</a>
