@@ -56,31 +56,29 @@
     </div>
     <div class="post-content">
       <link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h4 id="闭包-内层函数-外层函数变量"><a href="#闭包-内层函数-外层函数变量" class="headerlink" title="闭包(内层函数+外层函数变量)"></a>闭包(内层函数+外层函数变量)</h4><p>举个例子</p>
-<pre><code class="javascript">function outer()&#123;
-    let i = 1
-    function fn()&#123;
-        console.log(i)
-    &#125;
-    return fn
+<pre><code class="hljs javascript"><span class="hljs-keyword">function</span> <span class="hljs-title function_">outer</span>(<span class="hljs-params"></span>)&#123;
+	<span class="hljs-keyword">let</span> i = <span class="hljs-number">1</span>
+	<span class="hljs-keyword">function</span> <span class="hljs-title function_">fn</span>(<span class="hljs-params"></span>)&#123;
+		<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(i)
+	&#125;
+	<span class="hljs-keyword">return</span> fn
 &#125;
-const fun = outer()
-fun()
-</code></pre>
+<span class="hljs-keyword">const</span> fun = <span class="hljs-title function_">outer</span>()
+<span class="hljs-title function_">fun</span>()</code></pre>
 <p>fun()这个函数可以读取到outer()中的变量</p>
 <p>fun是全局的，根据js回收机制中标记清除法，从fun中可以找到i，所以i变量i不会被清除。</p>
 <h4 id="关于闭包实现数据私有"><a href="#关于闭包实现数据私有" class="headerlink" title="关于闭包实现数据私有"></a>关于闭包实现数据私有</h4><p>举个例子</p>
-<pre><code class="javascript">function outer()&#123;
-    let i = 0
-    function fn()&#123;
-         i++
-        console.log(i)
-    &#125;
-    return fn
+<pre><code class="hljs javascript"><span class="hljs-keyword">function</span> <span class="hljs-title function_">outer</span>(<span class="hljs-params"></span>)&#123;
+	<span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>
+	<span class="hljs-keyword">function</span> <span class="hljs-title function_">fn</span>(<span class="hljs-params"></span>)&#123;
+		 i++
+		<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(i)
+	&#125;
+	<span class="hljs-keyword">return</span> fn
 &#125;
-const fun = outer()
-i=1000
-fun()
-</code></pre>
+<span class="hljs-keyword">const</span> fun = <span class="hljs-title function_">outer</span>()
+i=<span class="hljs-number">1000</span>
+<span class="hljs-title function_">fun</span>()</code></pre>
 <p>i为局部变量，无法被外部修改，最后输出为1，不会为1001。</p>
 
     </div>
