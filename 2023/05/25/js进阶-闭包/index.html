@@ -66,6 +66,7 @@
 <span class="hljs-keyword">const</span> fun = <span class="hljs-title function_">outer</span>()
 <span class="hljs-title function_">fun</span>()</code></pre>
 <p>fun()这个函数可以读取到outer()中的变量</p>
+<span id="more"></span>
 <p>fun是全局的，根据js回收机制中标记清除法，从fun中可以找到i，所以i变量i不会被清除。</p>
 <h4 id="关于闭包实现数据私有"><a href="#关于闭包实现数据私有" class="headerlink" title="关于闭包实现数据私有"></a>关于闭包实现数据私有</h4><p>举个例子</p>
 <pre><code class="hljs javascript"><span class="hljs-keyword">function</span> <span class="hljs-title function_">outer</span>(<span class="hljs-params"></span>)&#123;

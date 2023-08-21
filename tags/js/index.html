@@ -58,7 +58,17 @@
           es-闭包
         </div>
         <div class="page-excerpt">
-          
+          <h4 id="闭包-内层函数-外层函数变量"><a href="#闭包-内层函数-外层函数变量" class="headerlink" title="闭包(内层函数+外层函数变量)"></a>闭包(内层函数+外层函数变量)</h4><p>举个例子</p>
+<pre><code class="hljs javascript"><span class="hljs-keyword">function</span> <span class="hljs-title function_">outer</span>(<span class="hljs-params"></span>)&#123;
+	<span class="hljs-keyword">let</span> i = <span class="hljs-number">1</span>
+	<span class="hljs-keyword">function</span> <span class="hljs-title function_">fn</span>(<span class="hljs-params"></span>)&#123;
+		<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(i)
+	&#125;
+	<span class="hljs-keyword">return</span> fn
+&#125;
+<span class="hljs-keyword">const</span> fun = <span class="hljs-title function_">outer</span>()
+<span class="hljs-title function_">fun</span>()</code></pre>
+<p>fun()这个函数可以读取到outer()中的变量</p>
         </div>
         <div class="post-list-footer">
 <!--           <div class="read-more-button">
@@ -79,7 +89,12 @@
           es-JS垃圾回收机制
         </div>
         <div class="page-excerpt">
-          
+          <p><strong>1、什么是js的回收机制</strong></p>
+<ul>
+<li>垃圾回收机制的原理是找到不再继续使用的变量，释放其内存。垃圾回收器会按照固定的时间间隔(或代码中预定的收集时间)，周期性地执行这一操作;</li>
+<li>Javascript 会找出不再使用的变量，不再使用意味着这个变量生命周期的结束。Javascript 中存在两种变量——全局变量和局部变量，全部变量的声明周期会一直持续，直到页面卸载;</li>
+<li>而局部变量声明在函数中，它的声明周期从执行函数开始，直到函数执行结束。在这个过程中，局部变量会在堆或栈上被分配相应的空间以存储它们的值，函数执行结束，这些局部变量也不再被使用，它们所占用的空间也就被释放;</li>
+<li>垃圾回收的两种实现方式：标记清除、引用计数
         </div>
         <div class="post-list-footer">
 <!--           <div class="read-more-button">
@@ -100,7 +115,9 @@
           es-作用域
         </div>
         <div class="page-excerpt">
-          
+          <h3 id="作用域"><a href="#作用域" class="headerlink" title="作用域"></a>作用域</h3><p>var声明一个全局变量</p>
+<p>let和const声明一个局部变量，其中const声明的变量无法重新赋值</p>
+<p>局部作用域中变量不会被外界影响，分函数作用域和块作用域</p>
         </div>
         <div class="post-list-footer">
 <!--           <div class="read-more-button">
